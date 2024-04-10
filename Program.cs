@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace MyApp
 {
@@ -20,6 +21,8 @@ namespace MyApp
             object obj1 = "Eva"; //GENÉRICOH
             object obj2 = 4.7f;
 
+            double saldo = 10.35785;
+
             x++;
             Console.WriteLine(completo);
             Console.WriteLine(genero);
@@ -27,8 +30,8 @@ namespace MyApp
             Console.WriteLine(x);
             Console.WriteLine(n1);
             Console.WriteLine(n2);
-            Console.WriteLine(n3);
-            Console.WriteLine(n4);
+            Console.Write(n3);
+            Console.Write(n4);
             Console.WriteLine(n5);
             Console.WriteLine(n6);
             Console.WriteLine(nome);
@@ -38,7 +41,8 @@ namespace MyApp
             Console.WriteLine(double.MinValue);
             Console.WriteLine(long.MaxValue);
             Console.WriteLine(decimal.MaxValue);
-            
+            Console.WriteLine(saldo.ToString("F2")); //QUANTIDADE DE CASAS DECIMAIS
+            Console.WriteLine(saldo.ToString("F5", CultureInfo.InvariantCulture)); //FORMATA COM .
         }
     }
 }
