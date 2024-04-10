@@ -21,6 +21,8 @@ namespace MyApp
             object obj1 = "Eva"; //GENÉRICOH
             object obj2 = 4.7f;
 
+            int anos = 23;
+
             double saldo = 10.35785;
 
             x++;
@@ -43,6 +45,15 @@ namespace MyApp
             Console.WriteLine(decimal.MaxValue);
             Console.WriteLine(saldo.ToString("F2")); //QUANTIDADE DE CASAS DECIMAIS
             Console.WriteLine(saldo.ToString("F5", CultureInfo.InvariantCulture)); //FORMATA COM .
+
+            //PLACEHOLDERS
+            Console.WriteLine("{0} tem {1} anos e saldo igual a {2:F2} reais.", nome, anos, saldo);
+
+            //INTERPOLAÇÃO
+            System.Console.WriteLine($"{nome} tem {anos} anos e saldo igual a {saldo:F2} reais.");
+
+            //CONCATENAÇÃO
+            Console.WriteLine(nome + " tem " + anos + " anos e saldo igual a " + saldo.ToString("F2") + " reais.");
         }
     }
 }
