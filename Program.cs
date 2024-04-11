@@ -30,6 +30,34 @@ namespace MyApp
 
             number--;
             System.Console.WriteLine(number);
+
+            float a1 = 4.5F;
+
+            double a2 = a1;
+
+            System.Console.WriteLine(a2);
+
+            double a3 = 4.5F;
+
+            float a4 = (float)a3;
+
+            System.Console.WriteLine(a4);
+
+            double a5;
+            int a6;
+            a5 = 4.1;
+            a6 = (int)a5;
+            System.Console.WriteLine(a6);
+
+
+            int c = 5;
+            int d = 2;
+
+            double e = (double) c/d;
+
+            System.Console.WriteLine(e);
+
+            
         }
     }
 }
