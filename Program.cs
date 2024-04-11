@@ -53,11 +53,24 @@ namespace MyApp
             int c = 5;
             int d = 2;
 
-            double e = (double) c/d;
+            double e = (double)c / d;
 
             System.Console.WriteLine(e);
 
+            //BHASKARA
+            //(-b±√(b²-4ac))/(2a) .
+            double f = 1.0, g = -3.0, h = -4.0;
             
+            //POTENCIA
+            double delta = g * g - 4.0 * f * h; // Math.Pow(g, 2.0) - 4.0 * f * c;
+        
+            //RAIZ QUADRADA
+            double x1 = (-g + Math.Sqrt(delta)) / (2.0 * f);
+            double x2 = (-g - Math.Sqrt(delta)) / (2.0 * f);
+
+            System.Console.WriteLine(delta);
+            System.Console.WriteLine(x1);
+            System.Console.WriteLine(x2);
         }
     }
 }
