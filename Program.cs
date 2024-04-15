@@ -7,57 +7,30 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            int a = 10;
-            Console.WriteLine(a);
-            a += 2;
-            Console.WriteLine(a);
-            a -= 2;
-            Console.WriteLine(a);
-            a *= 2;
-            Console.WriteLine(a);
-            a /= 4;
-            Console.WriteLine(a);
-            int b = 100;
-            b %= 3; //RESTO DA DIVISÃO
-            Console.WriteLine(b);
+            // ENTRADA DE DADOS
+            // string frase = Console.ReadLine();
+            // System.Console.WriteLine(frase);
 
-            string letras = "ABC";
-            System.Console.WriteLine(letras += "DEF");
+        
+            // string[] vet = Console.ReadLine().Split(' ');
+            // System.Console.WriteLine(vet[0]);
+            // System.Console.WriteLine(vet[1]);
 
-            int number = 1;
-            number++;
-            System.Console.WriteLine(number);
+            // int n1 = int.Parse(Console.ReadLine());
+            // char ch = char.Parse(Console.ReadLine()); //1 caracter
+            // double n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            // System.Console.WriteLine(n2.ToString("F2"));
 
-            number--;
-            System.Console.WriteLine(number);
+            string [] arr = Console.ReadLine().Split();
+            string nome = arr[0];
+            int idade = int.Parse(arr[1]);
+            char sexo = char.Parse(arr[2]);
+            double altura = double.Parse(arr[3]);
 
-            float a1 = 4.5F;
+            string resultado = $"{nome} {idade} {sexo}";
+            resultado.Replace("%", "");
 
-            double a2 = a1;
-
-            System.Console.WriteLine(a2);
-
-            double a3 = 4.5F;
-
-            float a4 = (float)a3;
-
-            System.Console.WriteLine(a4);
-
-            double a5;
-            int a6;
-            a5 = 4.1;
-            a6 = (int)a5;
-            System.Console.WriteLine(a6);
-
-
-            int c = 5;
-            int d = 2;
-
-            double e = (double) c/d;
-
-            System.Console.WriteLine(e);
-
-            
+            System.Console.WriteLine(resultado);
         }
     }
 }
