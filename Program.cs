@@ -7,16 +7,35 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-          bool c1 = 2 > 3 && 4 != 5;
-          bool c2 = 2 <= 3 && 4 != 5;
-          bool c3 = 2 > 3 || 4 != 5;
-          bool c4 = !(2 > 3) && 4 != 5;
-          bool c5 = 2 > 3 && 4 == 5;
-          System.Console.WriteLine(c1);
-          System.Console.WriteLine(c2);
-          System.Console.WriteLine(c3);
-          System.Console.WriteLine(c4);
-          System.Console.WriteLine(c5);
+          if(10 > 9){
+            System.Console.WriteLine("10 > 9 = VERDADEIRO");
+          } else if (10 < 9){
+            System.Console.WriteLine("10 < 9 = FALSO");
+          } else if (10 == 10) {
+            System.Console.WriteLine("10 == 10 = VERDADEIRO");
+          } else {
+            System.Console.WriteLine("SE NÃO");
+          }
+
+          if(10 == 9){
+            System.Console.WriteLine("10 > 9 = VERDADEIRO");
+          } else if (10 < 9){
+            System.Console.WriteLine("10 < 9 = FALSO");
+          } else if (10 == 10) {
+            System.Console.WriteLine("10 == 10 = VERDADEIRO");
+          } else {
+            System.Console.WriteLine("SE NÃO");
+          }
+
+          if(10 == 9){
+            System.Console.WriteLine("10 > 9 = VERDADEIRO");
+          } else if (10 < 9){
+            System.Console.WriteLine("10 < 9 = FALSO");
+          } else if (10 > 10) {
+            System.Console.WriteLine("10 == 10 = VERDADEIRO");
+          } else {
+            System.Console.WriteLine("SE NÃO");
+          }
         }
     }
 }
