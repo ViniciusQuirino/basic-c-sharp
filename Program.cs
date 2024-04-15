@@ -7,35 +7,26 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-          if(10 > 9){
-            System.Console.WriteLine("10 > 9 = VERDADEIRO");
-          } else if (10 < 9){
-            System.Console.WriteLine("10 < 9 = FALSO");
-          } else if (10 == 10) {
-            System.Console.WriteLine("10 == 10 = VERDADEIRO");
-          } else {
-            System.Console.WriteLine("SE NÃO");
-          }
+            int n1 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
+            int n3 = int.Parse(Console.ReadLine());
 
-          if(10 == 9){
-            System.Console.WriteLine("10 > 9 = VERDADEIRO");
-          } else if (10 < 9){
-            System.Console.WriteLine("10 < 9 = FALSO");
-          } else if (10 == 10) {
-            System.Console.WriteLine("10 == 10 = VERDADEIRO");
-          } else {
-            System.Console.WriteLine("SE NÃO");
-          }
+            int resultado = Maior(n1, n2, n3);
 
-          if(10 == 9){
-            System.Console.WriteLine("10 > 9 = VERDADEIRO");
-          } else if (10 < 9){
-            System.Console.WriteLine("10 < 9 = FALSO");
-          } else if (10 > 10) {
-            System.Console.WriteLine("10 == 10 = VERDADEIRO");
-          } else {
-            System.Console.WriteLine("SE NÃO");
-          }
+            System.Console.WriteLine(resultado + " é o maior");
+        }
+
+        static int Maior(int a, int b, int c)
+        {
+            int m;
+            if(a > b && a > c){
+                m = a ;
+            } else if (b > c){
+                m = b;
+            } else {
+                m = c;
+            }
+        return m;
         }
     }
 }
