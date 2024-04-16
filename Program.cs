@@ -7,26 +7,18 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            int n1 = int.Parse(Console.ReadLine());
-            int n2 = int.Parse(Console.ReadLine());
-            int n3 = int.Parse(Console.ReadLine());
+            Console.Write("Digite um número: ");
+            double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            while (x >= 0.0)
+            {
+                double raiz = Math.Sqrt(x);
+                Console.WriteLine(raiz.ToString("F3", CultureInfo.InvariantCulture));
 
-            int resultado = Maior(n1, n2, n3);
-
-            System.Console.WriteLine(resultado + " é o maior");
-        }
-
-        static int Maior(int a, int b, int c)
-        {
-            int m;
-            if(a > b && a > c){
-                m = a ;
-            } else if (b > c){
-                m = b;
-            } else {
-                m = c;
+                Console.Write("Digite outro número: ");
+                x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
-        return m;
+
+            System.Console.WriteLine("Numero negativo!");
         }
     }
 }
